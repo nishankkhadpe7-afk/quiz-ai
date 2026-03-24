@@ -200,8 +200,8 @@ export default function App() {
             <section className="max-w-6xl mx-auto px-4 sm:px-6 pt-16 sm:pt-24 pb-20 sm:pb-32 grid md:grid-cols-2 gap-8 sm:gap-16 items-center">
                 <div className="space-y-8 sm:space-y-10">
                 <div className="space-y-4">
-                  <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-[-0.03em] text-[#1d1d1f] dark:text-white leading-[1.08]">
-                    Quiz Master <span className="text-[#0071e3]">Pro</span>
+                  <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-[-0.03em] leading-[1.08]" style={{ color: '#000000' }}>
+                    <span className="dark:text-white">Quiz Master</span> <span className="text-[#0071e3]">Pro</span>
                   </h1>
                   <p className="text-base sm:text-lg md:text-[19px] text-slate-500 dark:text-slate-400 leading-relaxed font-normal max-w-md">
                     Generate custom quizzes on any topic instantly.
@@ -240,7 +240,7 @@ export default function App() {
             {/* FEATURES SECTION */}
             <section ref={featuresRef} className="bg-white dark:bg-slate-900 py-16 sm:py-24 md:py-32 border-y border-slate-200/60 dark:border-slate-800/60">
               <div className="max-w-6xl mx-auto px-4 sm:px-6">
-                <h2 className="text-3xl sm:text-4xl font-bold text-center mb-12 sm:mb-16 text-[#1d1d1f] dark:text-white">Why Choose Us</h2>
+                <h2 className="text-3xl sm:text-4xl font-bold text-center mb-12 sm:mb-16 dark:text-white" style={{ color: '#000000' }}>Why Choose Us</h2>
                 <div className="grid md:grid-cols-3 gap-8 sm:gap-12">
                   {[
                     { title: "AI Powered", desc: "Intelligent questions generated for any topic.", icon: Layers },
@@ -249,7 +249,7 @@ export default function App() {
                   ].map((f, i) => (
                     <div key={i} className="space-y-4">
                       <div className="text-[#0071e3] bg-[#0071e3]/5 dark:bg-[#0071e3]/10 w-12 h-12 rounded-xl flex items-center justify-center"><f.icon size={26} strokeWidth={2}/></div>
-                      <h3 className="text-lg sm:text-xl font-bold tracking-tight text-[#1d1d1f] dark:text-white">{f.title}</h3>
+                      <h3 className="text-lg sm:text-xl font-bold tracking-tight dark:text-white" style={{ color: '#000000' }}>{f.title}</h3>
                       <p className="text-slate-500 dark:text-slate-400 text-sm sm:text-base leading-relaxed">{f.desc}</p>
                     </div>
                   ))}
@@ -260,7 +260,7 @@ export default function App() {
             {/* ABOUT SECTION */}
             <section ref={aboutRef} className="max-w-6xl mx-auto px-4 sm:px-6 py-16 sm:py-24 md:py-32 grid md:grid-cols-2 gap-8 sm:gap-12 md:gap-20 items-center">
               <div className="space-y-6">
-                <h2 className="text-3xl sm:text-4xl md:text-[40px] font-bold tracking-tight leading-tight text-[#1d1d1f] dark:text-white">Learn Better<br /><span className="text-[#0071e3]">Instantly.</span></h2>
+                <h2 className="text-3xl sm:text-4xl md:text-[40px] font-bold tracking-tight leading-tight dark:text-white" style={{ color: '#000000' }}>Learn Better<br /><span className="text-[#0071e3]">Instantly.</span></h2>
                 <p className="text-base sm:text-lg md:text-[17px] text-slate-500 dark:text-slate-400 leading-relaxed">
                   Quiz Master Pro makes learning interactive and instant. Get AI-powered questions on any topic and track your progress.
                 </p>
@@ -270,14 +270,14 @@ export default function App() {
                     <div className="flex gap-4 items-start">
                         <div className="bg-white dark:bg-slate-700 p-2 sm:p-3 rounded-2xl shadow-sm shrink-0"><ShieldCheck className="text-emerald-500 w-5 h-5 sm:w-6 sm:h-6" /></div>
                         <div>
-                            <h4 className="font-bold text-base sm:text-[17px] text-[#1d1d1f] dark:text-white">Accurate Questions</h4>
+                            <h4 className="font-bold text-base sm:text-[17px] dark:text-white" style={{ color: '#000000' }}>Accurate Questions</h4>
                             <p className="text-xs sm:text-sm text-slate-500 dark:text-slate-400">High-quality, relevant content.</p>
                         </div>
                     </div>
                     <div className="flex gap-4 items-start">
                         <div className="bg-white dark:bg-slate-700 p-2 sm:p-3 rounded-2xl shadow-sm shrink-0"><Zap className="text-[#0071e3] w-5 h-5 sm:w-6 sm:h-6" /></div>
                         <div>
-                            <h4 className="font-bold text-base sm:text-[17px] text-[#1d1d1f] dark:text-white">Any Topic</h4>
+                            <h4 className="font-bold text-base sm:text-[17px] dark:text-white" style={{ color: '#000000' }}>Any Topic</h4>
                             <p className="text-xs sm:text-sm text-slate-500 dark:text-slate-400">Science, history, languages & more.</p>
                         </div>
                     </div>
@@ -300,11 +300,11 @@ export default function App() {
                 <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between border-b border-slate-200/60 dark:border-slate-700/60 pb-4 sm:pb-6 md:pb-8 gap-4 sm:gap-0">
                   <div className="space-y-1">
                     <span className="text-xs sm:text-[11px] font-bold uppercase tracking-[0.1em] sm:tracking-[0.15em] text-[#0071e3]">{topic}</span>
-                    <h3 className="text-lg sm:text-[24px] md:text-[28px] font-bold tracking-tight text-[#1d1d1f] dark:text-white">Question {currentIdx + 1} of {questions.length}</h3>
+                    <h3 className="text-lg sm:text-[24px] md:text-[28px] font-bold tracking-tight dark:text-white" style={{ color: '#000000' }}>Question {currentIdx + 1} of {questions.length}</h3>
                   </div>
                   <div className="text-right sm:text-right">
                     <p className="text-xs sm:text-[11px] font-bold text-slate-400 dark:text-slate-500 uppercase tracking-widest">Score</p>
-                    <p className="text-xl sm:text-[24px] md:text-[28px] font-bold text-slate-900 dark:text-white">{score}/{questions.length}</p>
+                    <p className="text-xl sm:text-[24px] md:text-[28px] font-bold dark:text-white" style={{ color: '#000000' }}>{score}/{questions.length}</p>
                   </div>
                 </div>
 
@@ -373,7 +373,7 @@ export default function App() {
                   <Trophy size={32} className="sm:w-10 sm:h-10 md:w-12 md:h-12 text-white dark:text-[#4fa3ff]" />
                 </div>
                 <div className="space-y-2 sm:space-y-3">
-                  <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold tracking-tight text-[#1d1d1f] dark:text-white">Quiz Complete!</h2>
+                  <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold tracking-tight dark:text-white" style={{ color: '#000000' }}>Quiz Complete!</h2>
                   <p className="text-sm sm:text-base md:text-[19px] text-slate-500 dark:text-slate-400 font-medium">Great job on <span className="text-[#0071e3] dark:text-[#4fa3ff]">{topic}</span>!</p>
                 </div>
                 
@@ -384,7 +384,7 @@ export default function App() {
                    </div>
                    <div className="bg-white dark:bg-slate-800 border border-slate-200/60 dark:border-slate-700/60 p-3 sm:p-4 md:p-6 lg:p-8 rounded-lg sm:rounded-xl md:rounded-2xl lg:rounded-[32px] shadow-sm dark:shadow-lg dark:shadow-slate-900/30">
                       <p className="text-[8px] sm:text-[9px] md:text-[10px] lg:text-[11px] font-bold text-slate-400 dark:text-slate-500 uppercase tracking-wider mb-2">Accuracy</p>
-                      <p className="text-xl sm:text-2xl md:text-3xl lg:text-[32px] font-bold text-[#1d1d1f] dark:text-white tracking-tighter">{Math.round((score/questions.length)*100)}%</p>
+                      <p className="text-xl sm:text-2xl md:text-3xl lg:text-[32px] font-bold dark:text-white tracking-tighter" style={{ color: '#000000' }}>{Math.round((score/questions.length)*100)}%</p>
                    </div>
                 </div>
 
@@ -404,7 +404,7 @@ export default function App() {
             <div className="space-y-4">
                 <div className="flex items-center justify-center gap-2.5">
                     <div className="bg-[#1d1d1f] dark:bg-white p-1 rounded-lg"><BrainCircuit size={18} className="text-white dark:text-slate-900" /></div>
-                    <span className="font-bold text-base sm:text-lg md:text-[17px] tracking-tight text-[#1d1d1f] dark:text-white">Quiz Master Pro</span>
+                    <span className="font-bold text-base sm:text-lg md:text-[17px] tracking-tight dark:text-white" style={{ color: '#000000' }}>Quiz Master Pro</span>
                 </div>
                 <p className="text-xs sm:text-sm text-slate-400 dark:text-slate-500 leading-relaxed">
                     © 2026 Quiz Master. Made with ❤️
